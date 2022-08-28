@@ -1,0 +1,9 @@
+<h3>Update Message: {{ key }}</h3>
+
+<form action='' method='post'>
+    {% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    <input type='submit' />
+</form>
